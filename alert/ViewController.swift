@@ -21,6 +21,8 @@ class ViewController: UIViewController {
     var unlockButtonCenter: CGPoint!
     
     var menuPressed = 0
+    var hour = 0
+    var numOfUnlocks = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -81,6 +83,39 @@ class ViewController: UIViewController {
             
             menuPressed = 0
         }
+    }//closing bracket of menu pressed
+    
+    @IBAction func timeButton(_ sender: UIButton) {
+        askForInput(title: "Time", message: "Enter ", defaultText: "Enter a number")
+    }
+    
+    
+    @IBAction func playButton(_ sender: UIButton) {
+    }
+    
+    
+    @IBAction func unlockButton(_ sender: Any) {
+        askForInput(title: "Unlocks", message: "Enter maximum number of unlocks for today", defaultText: "Enter a number")
+    }
+    
+    func askForInput(title: String, message: String, defaultText: String){
+        //1. Create the alert controller.
+        let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        
+        //2. Add the text field. You can configure it however you need.
+        alert.addTextField { (textField) in
+            textField.keyboardType = UIKeyboardType.numberPad
+            textField.placeholder = defaultText
+        }
+        
+        // 3. Grab the value from the text field, and print it when the user clicks OK.
+        alert.addAction(UIAlertAction(title: "Submit", style: .default, handler: { [weak alert] (_) in
+            let textField = alert?.textFields![0] // Force unwrapping because we know it exists.
+            self.hour = Int((textField?.text)!)!
+        }))
+        
+        // 4. Present the alert.
+        self.present(alert, animated: true, completion: nil)
     }
 }
 
