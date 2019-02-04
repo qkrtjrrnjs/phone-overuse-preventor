@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="EEw-jv-vcu">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Time View Controller-->
         <scene sceneID="ZmM-XB-ygI">
             <objects>
-                <viewController modalPresentationStyle="overCurrentContext" id="EEw-jv-vcu" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="overCurrentContext" id="EEw-jv-vcu" customClass="TimeViewController" customModule="alert" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fdt-Sk-fi3">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FD8-Qo-XEi">
@@ -36,6 +40,9 @@
                                         <rect key="frame" x="123" y="206" width="49" height="30"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Submit"/>
+                                        <connections>
+                                            <action selector="submitButtonPressed:" destination="EEw-jv-vcu" eventType="touchUpInside" id="49f-Yv-LYu"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="0.76989072085889576" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -49,6 +56,11 @@
                         <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="iUt-xp-uFw"/>
                     </view>
+                    <connections>
+                        <outlet property="submitButton" destination="rZv-lY-XCS" id="8Js-Z2-r6r"/>
+                        <outlet property="timerPicker" destination="tIF-hC-AIT" id="Mwt-4j-2Ya"/>
+                        <outlet property="titleLabel" destination="dam-zB-HjJ" id="t0l-OB-G6c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jkt-8q-G7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
