@@ -18,20 +18,55 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree" translatesAutoresizingMaskIntoConstraints="NO" id="zTQ-nR-kaC">
-                                <rect key="frame" x="-30" y="183" width="460" height="300"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="tree 1" translatesAutoresizingMaskIntoConstraints="NO" id="zTQ-nR-kaC">
+                                <rect key="frame" x="-48" y="136" width="500" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-cd-iNx">
+                                <rect key="frame" x="248" y="525" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="unlock 1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-Lj-ZJq">
+                                <rect key="frame" x="177" y="464" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="play 1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-fb-DXc">
+                                <rect key="frame" x="99" y="525" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="time 1"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CN-BZ-VMa">
+                                <rect key="frame" x="178" y="591" width="40" height="40"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="menu"/>
+                                <connections>
+                                    <action selector="menuPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6g-8f-eNw"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="menu" destination="6CN-BZ-VMa" id="r6k-2x-gsO"/>
+                        <outlet property="play" destination="8cb-Lj-ZJq" id="T8N-Tp-w4j"/>
+                        <outlet property="time" destination="LF4-fb-DXc" id="hqA-a4-n8B"/>
+                        <outlet property="tree" destination="zTQ-nR-kaC" id="VKl-5s-fQM"/>
+                        <outlet property="unlock" destination="OxL-cd-iNx" id="Eau-JJ-gtX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="40.799999999999997" y="26.53673163418291"/>
         </scene>
     </scenes>
     <resources>
-        <image name="tree" width="921.5999755859375" height="518.4000244140625"/>
+        <image name="menu" width="384" height="384"/>
+        <image name="play 1" width="46.428211212158203" height="46.428211212158203"/>
+        <image name="time 1" width="409.60000610351562" height="409.60000610351562"/>
+        <image name="tree 1" width="921.5999755859375" height="518.4000244140625"/>
+        <image name="unlock 1" width="409.60000610351562" height="409.60000610351562"/>
     </resources>
 </document>
