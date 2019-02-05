@@ -17,8 +17,16 @@ class UnlocksViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        //amount.keyboardType = UIKeyboardType.decimalPad
+        
+        unlocksTextField.attributedPlaceholder = NSAttributedString(string: "number of unlocks", attributes: [
+            .foregroundColor: UIColor.lightGray,
+            .font: UIFont(name: "Gill Sans", size: 16)!
+            ])
+        
+        //unlocksTextField.placeholder = "number of unlocks"
+        unlocksTextField.keyboardType = UIKeyboardType.numberPad
+        
+        
     }
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {

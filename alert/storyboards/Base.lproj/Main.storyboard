@@ -22,17 +22,16 @@
                                 <rect key="frame" x="-48" y="136" width="500" height="300"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-cd-iNx">
-                                <rect key="frame" x="248" y="525" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-Lj-ZJq">
+                                <rect key="frame" x="162" y="463" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="unlock 1"/>
+                                <state key="normal" title="Button" image="play 1"/>
                                 <connections>
-                                    <action selector="unlockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPo-J8-0L8"/>
-                                    <segue destination="aYg-Qy-DXy" kind="presentation" id="OLW-lb-zgc"/>
+                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12g-KH-lrF"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LF4-fb-DXc">
-                                <rect key="frame" x="100" y="525" width="50" height="50"/>
+                                <rect key="frame" x="82" y="525" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="time 1"/>
                                 <connections>
@@ -41,19 +40,20 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6CN-BZ-VMa">
-                                <rect key="frame" x="178" y="591" width="40" height="40"/>
+                                <rect key="frame" x="167" y="595" width="40" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button" image="menu"/>
                                 <connections>
                                     <action selector="menuPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T6g-8f-eNw"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8cb-Lj-ZJq">
-                                <rect key="frame" x="173" y="463" width="50" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OxL-cd-iNx">
+                                <rect key="frame" x="247" y="525" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="play 1"/>
+                                <state key="normal" title="Button" image="unlock 1"/>
                                 <connections>
-                                    <action selector="playButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12g-KH-lrF"/>
+                                    <action selector="unlockButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KPo-J8-0L8"/>
+                                    <segue destination="aYg-Qy-DXy" kind="presentation" id="OLW-lb-zgc"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -75,8 +75,8 @@
         <!--Time-->
         <scene sceneID="2BO-Ph-Bj4">
             <objects>
-                <viewControllerPlaceholder storyboardName="Time" id="xm1-vj-JZt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="88A-vl-wq0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewControllerPlaceholder storyboardName="Time" id="xm1-vj-JZt" sceneMemberID="viewController"/>
             </objects>
             <point key="canvasLocation" x="846" y="-28"/>
         </scene>

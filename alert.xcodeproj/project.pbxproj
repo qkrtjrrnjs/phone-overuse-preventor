@@ -24,6 +24,18 @@
 		831099BB22090F63006F5699 /* Abandoned.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099B322090F63006F5699 /* Abandoned.ttf */; };
 		831099BC22090F63006F5699 /* Abandoned-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099B422090F63006F5699 /* Abandoned-Italic.ttf */; };
 		831099BD22090F63006F5699 /* alt_west.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099B622090F63006F5699 /* alt_west.ttf */; };
+		831099C82209158B006F5699 /* natlog.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099C22209158B006F5699 /* natlog.ttf */; };
+		831099C92209158B006F5699 /* Just tell me what regular (Version 2).otf in Resources */ = {isa = PBXBuildFile; fileRef = 831099C42209158B006F5699 /* Just tell me what regular (Version 2).otf */; };
+		831099CB2209158B006F5699 /* Just tell me what regular-Italic (Version 2).otf in Resources */ = {isa = PBXBuildFile; fileRef = 831099C62209158B006F5699 /* Just tell me what regular-Italic (Version 2).otf */; };
+		831099DB22092140006F5699 /* TextMeOne-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099CE2209213F006F5699 /* TextMeOne-Regular.ttf */; };
+		831099DD22092140006F5699 /* Tellural Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D122092140006F5699 /* Tellural Bold Italic.ttf */; };
+		831099DE22092140006F5699 /* Tellural Alt Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D222092140006F5699 /* Tellural Alt Italic.ttf */; };
+		831099DF22092140006F5699 /* Tellural Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D322092140006F5699 /* Tellural Italic.ttf */; };
+		831099E022092140006F5699 /* Tellural Alt Bold Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D422092140006F5699 /* Tellural Alt Bold Italic.ttf */; };
+		831099E122092140006F5699 /* Tellural.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D522092140006F5699 /* Tellural.ttf */; };
+		831099E222092140006F5699 /* Tellural Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D622092140006F5699 /* Tellural Bold.ttf */; };
+		831099E322092140006F5699 /* Tellural Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D722092140006F5699 /* Tellural Alt.ttf */; };
+		831099E522092140006F5699 /* Tellural Alt Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D922092140006F5699 /* Tellural Alt Bold.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +79,18 @@
 		831099B322090F63006F5699 /* Abandoned.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abandoned.ttf; sourceTree = "<group>"; };
 		831099B422090F63006F5699 /* Abandoned-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abandoned-Italic.ttf"; sourceTree = "<group>"; };
 		831099B622090F63006F5699 /* alt_west.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alt_west.ttf; sourceTree = "<group>"; };
+		831099C22209158B006F5699 /* natlog.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = natlog.ttf; sourceTree = "<group>"; };
+		831099C42209158B006F5699 /* Just tell me what regular (Version 2).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Just tell me what regular (Version 2).otf"; sourceTree = "<group>"; };
+		831099C62209158B006F5699 /* Just tell me what regular-Italic (Version 2).otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Just tell me what regular-Italic (Version 2).otf"; sourceTree = "<group>"; };
+		831099CE2209213F006F5699 /* TextMeOne-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TextMeOne-Regular.ttf"; sourceTree = "<group>"; };
+		831099D122092140006F5699 /* Tellural Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Bold Italic.ttf"; sourceTree = "<group>"; };
+		831099D222092140006F5699 /* Tellural Alt Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Alt Italic.ttf"; sourceTree = "<group>"; };
+		831099D322092140006F5699 /* Tellural Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Italic.ttf"; sourceTree = "<group>"; };
+		831099D422092140006F5699 /* Tellural Alt Bold Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Alt Bold Italic.ttf"; sourceTree = "<group>"; };
+		831099D522092140006F5699 /* Tellural.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Tellural.ttf; sourceTree = "<group>"; };
+		831099D622092140006F5699 /* Tellural Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Bold.ttf"; sourceTree = "<group>"; };
+		831099D722092140006F5699 /* Tellural Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Alt.ttf"; sourceTree = "<group>"; };
+		831099D922092140006F5699 /* Tellural Alt Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Alt Bold.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,6 +173,10 @@
 		831099AD22090F1B006F5699 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				831099CC2209213F006F5699 /* julia-petretta_text-me-one */,
+				831099D022092140006F5699 /* nymphont_tellural */,
+				831099C32209158B006F5699 /* just-tell-me-what */,
+				831099C02209158B006F5699 /* natural-log */,
 				831099B022090F63006F5699 /* abandoned */,
 				831099B522090F63006F5699 /* alt-west */,
 			);
@@ -169,9 +197,9 @@
 		831099AF22090F3D006F5699 /* controllers */ = {
 			isa = PBXGroup;
 			children = (
-				831099A722090146006F5699 /* TimeViewController.swift */,
-				831099A92209015C006F5699 /* UnlocksViewController.swift */,
 				8310997622075C99006F5699 /* ViewController.swift */,
+				831099A92209015C006F5699 /* UnlocksViewController.swift */,
+				831099A722090146006F5699 /* TimeViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -193,6 +221,46 @@
 				831099B622090F63006F5699 /* alt_west.ttf */,
 			);
 			path = "alt-west";
+			sourceTree = "<group>";
+		};
+		831099C02209158B006F5699 /* natural-log */ = {
+			isa = PBXGroup;
+			children = (
+				831099C22209158B006F5699 /* natlog.ttf */,
+			);
+			path = "natural-log";
+			sourceTree = "<group>";
+		};
+		831099C32209158B006F5699 /* just-tell-me-what */ = {
+			isa = PBXGroup;
+			children = (
+				831099C42209158B006F5699 /* Just tell me what regular (Version 2).otf */,
+				831099C62209158B006F5699 /* Just tell me what regular-Italic (Version 2).otf */,
+			);
+			path = "just-tell-me-what";
+			sourceTree = "<group>";
+		};
+		831099CC2209213F006F5699 /* julia-petretta_text-me-one */ = {
+			isa = PBXGroup;
+			children = (
+				831099CE2209213F006F5699 /* TextMeOne-Regular.ttf */,
+			);
+			path = "julia-petretta_text-me-one";
+			sourceTree = "<group>";
+		};
+		831099D022092140006F5699 /* nymphont_tellural */ = {
+			isa = PBXGroup;
+			children = (
+				831099D122092140006F5699 /* Tellural Bold Italic.ttf */,
+				831099D222092140006F5699 /* Tellural Alt Italic.ttf */,
+				831099D322092140006F5699 /* Tellural Italic.ttf */,
+				831099D422092140006F5699 /* Tellural Alt Bold Italic.ttf */,
+				831099D522092140006F5699 /* Tellural.ttf */,
+				831099D622092140006F5699 /* Tellural Bold.ttf */,
+				831099D722092140006F5699 /* Tellural Alt.ttf */,
+				831099D922092140006F5699 /* Tellural Alt Bold.ttf */,
+			);
+			path = nymphont_tellural;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,15 +368,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				8310997F22075C9C006F5699 /* LaunchScreen.storyboard in Resources */,
+				831099E522092140006F5699 /* Tellural Alt Bold.ttf in Resources */,
+				831099E222092140006F5699 /* Tellural Bold.ttf in Resources */,
 				831099BA22090F63006F5699 /* Abandoned-BoldItalic.ttf in Resources */,
 				831099BC22090F63006F5699 /* Abandoned-Italic.ttf in Resources */,
+				831099DE22092140006F5699 /* Tellural Alt Italic.ttf in Resources */,
+				831099DB22092140006F5699 /* TextMeOne-Regular.ttf in Resources */,
+				831099CB2209158B006F5699 /* Just tell me what regular-Italic (Version 2).otf in Resources */,
 				831099A42209004E006F5699 /* Time.storyboard in Resources */,
 				8310997C22075C9C006F5699 /* Assets.xcassets in Resources */,
 				831099A62209006A006F5699 /* Unlocks.storyboard in Resources */,
+				831099C92209158B006F5699 /* Just tell me what regular (Version 2).otf in Resources */,
 				831099BB22090F63006F5699 /* Abandoned.ttf in Resources */,
+				831099E022092140006F5699 /* Tellural Alt Bold Italic.ttf in Resources */,
+				831099E122092140006F5699 /* Tellural.ttf in Resources */,
+				831099DD22092140006F5699 /* Tellural Bold Italic.ttf in Resources */,
 				831099BD22090F63006F5699 /* alt_west.ttf in Resources */,
 				831099B922090F63006F5699 /* Abandoned-Bold.ttf in Resources */,
+				831099DF22092140006F5699 /* Tellural Italic.ttf in Resources */,
 				8310997A22075C99006F5699 /* Main.storyboard in Resources */,
+				831099E322092140006F5699 /* Tellural Alt.ttf in Resources */,
+				831099C82209158B006F5699 /* natlog.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

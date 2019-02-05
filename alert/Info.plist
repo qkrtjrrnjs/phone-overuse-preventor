@@ -9,6 +9,14 @@
 		<string>Abandoned.ttf</string>
 		<string>Abandoned-Italic.ttf</string>
 		<string>alt_west.ttf</string>
+		<string>Just tell me what regular (Version 2).otf</string>
+		<string>natlog.ttf</string>
+		<string>TextMeOne-Regular.ttf</string>
+		<string>Tellural Bold Italic.ttf</string>
+		<string>Tellural Alt Italic.ttf</string>
+		<string>Tellural.ttf</string>
+		<string>Tellural Bold.ttf</string>
+		<string>Tellural Alt.ttf</string>
 	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>

@@ -16,7 +16,7 @@ class TimeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
     }
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
