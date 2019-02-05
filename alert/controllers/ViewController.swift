@@ -84,9 +84,9 @@ class ViewController: UIViewController {
     }//closing bracket of menu pressed
     
     func setAlpha(alphaValue: Int){
-        play.alpha = 0
-        time.alpha = 0
-        unlock.alpha = 0
+        play.alpha = CGFloat(alphaValue)
+        time.alpha = CGFloat(alphaValue)
+        unlock.alpha = CGFloat(alphaValue)
     }
     
     @IBAction func timeButton(_ sender: UIButton) {

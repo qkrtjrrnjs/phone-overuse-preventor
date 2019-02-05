@@ -19,6 +19,11 @@
 		831099A822090146006F5699 /* TimeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831099A722090146006F5699 /* TimeViewController.swift */; };
 		831099AA2209015C006F5699 /* UnlocksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831099A92209015C006F5699 /* UnlocksViewController.swift */; };
 		831099AC2209031E006F5699 /* Global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831099AB2209031E006F5699 /* Global.swift */; };
+		831099B922090F63006F5699 /* Abandoned-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099B122090F63006F5699 /* Abandoned-Bold.ttf */; };
+		831099BA22090F63006F5699 /* Abandoned-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099B222090F63006F5699 /* Abandoned-BoldItalic.ttf */; };
+		831099BB22090F63006F5699 /* Abandoned.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099B322090F63006F5699 /* Abandoned.ttf */; };
+		831099BC22090F63006F5699 /* Abandoned-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099B422090F63006F5699 /* Abandoned-Italic.ttf */; };
+		831099BD22090F63006F5699 /* alt_west.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099B622090F63006F5699 /* alt_west.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +62,11 @@
 		831099A722090146006F5699 /* TimeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeViewController.swift; sourceTree = "<group>"; };
 		831099A92209015C006F5699 /* UnlocksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnlocksViewController.swift; sourceTree = "<group>"; };
 		831099AB2209031E006F5699 /* Global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Global.swift; sourceTree = "<group>"; };
+		831099B122090F63006F5699 /* Abandoned-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abandoned-Bold.ttf"; sourceTree = "<group>"; };
+		831099B222090F63006F5699 /* Abandoned-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abandoned-BoldItalic.ttf"; sourceTree = "<group>"; };
+		831099B322090F63006F5699 /* Abandoned.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Abandoned.ttf; sourceTree = "<group>"; };
+		831099B422090F63006F5699 /* Abandoned-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Abandoned-Italic.ttf"; sourceTree = "<group>"; };
+		831099B622090F63006F5699 /* alt_west.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = alt_west.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,16 +117,12 @@
 		8310997322075C99006F5699 /* alert */ = {
 			isa = PBXGroup;
 			children = (
+				831099AF22090F3D006F5699 /* controllers */,
+				831099AE22090F26006F5699 /* storyboards */,
+				831099AD22090F1B006F5699 /* fonts */,
 				8310997422075C99006F5699 /* AppDelegate.swift */,
 				831099AB2209031E006F5699 /* Global.swift */,
-				831099A722090146006F5699 /* TimeViewController.swift */,
-				831099A92209015C006F5699 /* UnlocksViewController.swift */,
-				8310997622075C99006F5699 /* ViewController.swift */,
-				8310997822075C99006F5699 /* Main.storyboard */,
-				831099A52209006A006F5699 /* Unlocks.storyboard */,
-				831099A22209004E006F5699 /* Time.storyboard */,
 				8310997B22075C9C006F5699 /* Assets.xcassets */,
-				8310997D22075C9C006F5699 /* LaunchScreen.storyboard */,
 				8310998022075C9C006F5699 /* Info.plist */,
 			);
 			path = alert;
@@ -138,6 +144,55 @@
 				8310999622075C9D006F5699 /* Info.plist */,
 			);
 			path = alertUITests;
+			sourceTree = "<group>";
+		};
+		831099AD22090F1B006F5699 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				831099B022090F63006F5699 /* abandoned */,
+				831099B522090F63006F5699 /* alt-west */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		831099AE22090F26006F5699 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				8310997D22075C9C006F5699 /* LaunchScreen.storyboard */,
+				8310997822075C99006F5699 /* Main.storyboard */,
+				831099A52209006A006F5699 /* Unlocks.storyboard */,
+				831099A22209004E006F5699 /* Time.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		831099AF22090F3D006F5699 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				831099A722090146006F5699 /* TimeViewController.swift */,
+				831099A92209015C006F5699 /* UnlocksViewController.swift */,
+				8310997622075C99006F5699 /* ViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		831099B022090F63006F5699 /* abandoned */ = {
+			isa = PBXGroup;
+			children = (
+				831099B122090F63006F5699 /* Abandoned-Bold.ttf */,
+				831099B222090F63006F5699 /* Abandoned-BoldItalic.ttf */,
+				831099B322090F63006F5699 /* Abandoned.ttf */,
+				831099B422090F63006F5699 /* Abandoned-Italic.ttf */,
+			);
+			path = abandoned;
+			sourceTree = "<group>";
+		};
+		831099B522090F63006F5699 /* alt-west */ = {
+			isa = PBXGroup;
+			children = (
+				831099B622090F63006F5699 /* alt_west.ttf */,
+			);
+			path = "alt-west";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +300,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				8310997F22075C9C006F5699 /* LaunchScreen.storyboard in Resources */,
+				831099BA22090F63006F5699 /* Abandoned-BoldItalic.ttf in Resources */,
+				831099BC22090F63006F5699 /* Abandoned-Italic.ttf in Resources */,
 				831099A42209004E006F5699 /* Time.storyboard in Resources */,
 				8310997C22075C9C006F5699 /* Assets.xcassets in Resources */,
 				831099A62209006A006F5699 /* Unlocks.storyboard in Resources */,
+				831099BB22090F63006F5699 /* Abandoned.ttf in Resources */,
+				831099BD22090F63006F5699 /* alt_west.ttf in Resources */,
+				831099B922090F63006F5699 /* Abandoned-Bold.ttf in Resources */,
 				8310997A22075C99006F5699 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
