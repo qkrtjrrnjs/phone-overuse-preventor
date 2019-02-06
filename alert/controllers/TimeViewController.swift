@@ -17,10 +17,12 @@ class TimeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        timerPicker.countDownDuration = 60.0
     }
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
-        
+        Global.hours = Int(timerPicker.countDownDuration)
+        dismiss(animated: true, completion: nil)
     }
     
 

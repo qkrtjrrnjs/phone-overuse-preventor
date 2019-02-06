@@ -18,19 +18,27 @@ class UnlocksViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //setting placeholder text and its font
         unlocksTextField.attributedPlaceholder = NSAttributedString(string: "number of unlocks", attributes: [
             .foregroundColor: UIColor.lightGray,
             .font: UIFont(name: "Gill Sans", size: 16)!
             ])
         
-        //unlocksTextField.placeholder = "number of unlocks"
         unlocksTextField.keyboardType = UIKeyboardType.numberPad
         
         
     }
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
-        
+        if (unlocksTextField.text?.isEmpty)!{
+            let alert = UIAlertController(title: "ERROR", message: "Empty input!", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }
+        else{
+            Global.unlocks = Int(unlocksTextField.text!)!
+            dismiss(animated: true, completion: nil)
+        }
     }
     
     
