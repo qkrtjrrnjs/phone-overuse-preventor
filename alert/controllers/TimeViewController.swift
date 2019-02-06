@@ -21,7 +21,7 @@ class TimeViewController: UIViewController {
     }
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {
-        Global.hours = Int(timerPicker.countDownDuration)
+        Global.seconds = Int(timerPicker.countDownDuration)
         dismiss(animated: true, completion: nil)
     }
     

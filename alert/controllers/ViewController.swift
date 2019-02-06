@@ -9,16 +9,19 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
 
     @IBOutlet weak var tree: UIImageView!
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var time: UIButton!
     @IBOutlet weak var unlock: UIButton!
     @IBOutlet weak var menu: UIButton!
+    @IBOutlet weak var pause: UIButton!
     
     var playButtonCenter: CGPoint!
     var timeButtonCenter: CGPoint!
     var unlockButtonCenter: CGPoint!
+    var pauseButtonCenter: CGPoint!
     
     var menuPressed = 0
     var hour = 0
@@ -36,11 +39,17 @@ class ViewController: UIViewController {
         playButtonCenter = play.center
         timeButtonCenter = time.center
         unlockButtonCenter = unlock.center
+        pauseButtonCenter = pause.center
         
         //place play, time, unlock button at the position of the menu button
         play.center = menu.center
         time.center = menu.center
         unlock.center = menu.center
+        pause.center = menu.center
+        
+        //hide and disable pause button
+        pause.isEnabled = false
+        pause.isHidden = true
     }
     
     @IBAction func menuPressed(_ sender: UIButton) {
@@ -56,6 +65,7 @@ class ViewController: UIViewController {
                 self.play.center = self.playButtonCenter
                 self.time.center = self.timeButtonCenter
                 self.unlock.center = self.unlockButtonCenter
+                self.pause.center = self.pauseButtonCenter
                 
                 //rotate menu button
                 self.menu.transform = self.menu.transform.rotated(by: CGFloat(Double.pi))
@@ -74,6 +84,7 @@ class ViewController: UIViewController {
                 self.play.center = self.menu.center
                 self.time.center = self.menu.center
                 self.unlock.center = self.menu.center
+                self.pause.center = self.menu.center
 
                 //rotate menu button
                 self.menu.transform = self.menu.transform.rotated(by: -CGFloat(Double.pi))
@@ -87,20 +98,42 @@ class ViewController: UIViewController {
         play.alpha = CGFloat(alphaValue)
         time.alpha = CGFloat(alphaValue)
         unlock.alpha = CGFloat(alphaValue)
+        pause.alpha = CGFloat(alphaValue)
     }
     
-    @IBAction func timeButton(_ sender: UIButton) {
-
+    @IBAction func pauseButton(_ sender: UIButton) {
+        Global.timer.invalidate()
+        
+        sender.isEnabled = false
+        sender.isHidden = true
+        play.isEnabled = true
+        play.isHidden = false
     }
-    
     
     @IBAction func playButton(_ sender: UIButton) {
+        if Global.seconds == 0 {
+            let alert = UIAlertController(title: "ERROR", message: "", preferredStyle: UIAlertController.Style.alert)
+            alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
+        }else{
+            runTimer()
+            sender.isEnabled = false
+            sender.isHidden = true
+            pause.isEnabled = true
+            pause.isHidden = false
+        }
     }
     
+    func runTimer() {
+        Global.timer = Timer.scheduledTimer(timeInterval: 1, target: self,   selector: (#selector(ViewController.updateTimer)), userInfo: nil, repeats: true)
+    }
     
-    @IBAction func unlockButton(_ sender: Any) {
-        
+    @objc func updateTimer(){
+        Global.seconds-=1
+        print(Global.seconds)
     }
     
 }
+
+
 

@@ -9,6 +9,7 @@
 import Foundation
 
 struct Global{
-    static var hours = 0
+    static var seconds = 0
     static var unlocks = 0
+    static var timer = Timer()
 }
