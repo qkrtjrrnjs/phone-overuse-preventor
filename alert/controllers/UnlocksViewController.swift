@@ -25,8 +25,11 @@ class UnlocksViewController: UIViewController {
             ])
         
         unlocksTextField.keyboardType = UIKeyboardType.numberPad
-        
-        
+        unlocksTextField.becomeFirstResponder()
+    }
+    
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true)
     }
     
     @IBAction func submitButtonPressed(_ sender: UIButton) {

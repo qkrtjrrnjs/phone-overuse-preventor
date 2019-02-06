@@ -20,6 +20,10 @@ class TimeViewController: UIViewController {
         timerPicker.countDownDuration = 60.0
     }
     
+    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+        dismiss(animated: true)
+    }
+    
     @IBAction func submitButtonPressed(_ sender: UIButton) {
         Global.seconds = Int(timerPicker.countDownDuration)
         dismiss(animated: true, completion: nil)

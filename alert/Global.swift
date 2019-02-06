@@ -12,4 +12,6 @@ struct Global{
     static var seconds = 0
     static var unlocks = 0
     static var timer = Timer()
+    static var h = 0, m = 0, s = 0
 }
+

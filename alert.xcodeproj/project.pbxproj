@@ -36,6 +36,8 @@
 		831099E222092140006F5699 /* Tellural Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D622092140006F5699 /* Tellural Bold.ttf */; };
 		831099E322092140006F5699 /* Tellural Alt.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D722092140006F5699 /* Tellural Alt.ttf */; };
 		831099E522092140006F5699 /* Tellural Alt Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 831099D922092140006F5699 /* Tellural Alt Bold.ttf */; };
+		831099E8220B3EFD006F5699 /* Metadata.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 831099E6220B3EFD006F5699 /* Metadata.storyboard */; };
+		831099EA220B3F34006F5699 /* MetadataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831099E9220B3F34006F5699 /* MetadataViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +93,8 @@
 		831099D622092140006F5699 /* Tellural Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Bold.ttf"; sourceTree = "<group>"; };
 		831099D722092140006F5699 /* Tellural Alt.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Alt.ttf"; sourceTree = "<group>"; };
 		831099D922092140006F5699 /* Tellural Alt Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Tellural Alt Bold.ttf"; sourceTree = "<group>"; };
+		831099E7220B3EFD006F5699 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = alert/storyboards/Base.lproj/Metadata.storyboard; sourceTree = "<group>"; };
+		831099E9220B3F34006F5699 /* MetadataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetadataViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +192,7 @@
 			children = (
 				8310997D22075C9C006F5699 /* LaunchScreen.storyboard */,
 				8310997822075C99006F5699 /* Main.storyboard */,
+				831099E6220B3EFD006F5699 /* Metadata.storyboard */,
 				831099A52209006A006F5699 /* Unlocks.storyboard */,
 				831099A22209004E006F5699 /* Time.storyboard */,
 			);
@@ -198,6 +203,7 @@
 			isa = PBXGroup;
 			children = (
 				8310997622075C99006F5699 /* ViewController.swift */,
+				831099E9220B3F34006F5699 /* MetadataViewController.swift */,
 				831099A92209015C006F5699 /* UnlocksViewController.swift */,
 				831099A722090146006F5699 /* TimeViewController.swift */,
 			);
@@ -375,6 +381,7 @@
 				8310997F22075C9C006F5699 /* LaunchScreen.storyboard in Resources */,
 				831099E522092140006F5699 /* Tellural Alt Bold.ttf in Resources */,
 				831099E222092140006F5699 /* Tellural Bold.ttf in Resources */,
+				831099E8220B3EFD006F5699 /* Metadata.storyboard in Resources */,
 				831099BA22090F63006F5699 /* Abandoned-BoldItalic.ttf in Resources */,
 				831099BC22090F63006F5699 /* Abandoned-Italic.ttf in Resources */,
 				831099DE22092140006F5699 /* Tellural Alt Italic.ttf in Resources */,
@@ -423,6 +430,7 @@
 				831099A822090146006F5699 /* TimeViewController.swift in Sources */,
 				831099AC2209031E006F5699 /* Global.swift in Sources */,
 				8310997522075C99006F5699 /* AppDelegate.swift in Sources */,
+				831099EA220B3F34006F5699 /* MetadataViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -480,6 +488,14 @@
 				831099A32209004E006F5699 /* Base */,
 			);
 			name = Time.storyboard;
+			sourceTree = "<group>";
+		};
+		831099E6220B3EFD006F5699 /* Metadata.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				831099E7220B3EFD006F5699 /* Base */,
+			);
+			name = Metadata.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */

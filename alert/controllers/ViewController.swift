@@ -130,8 +130,15 @@ class ViewController: UIViewController {
     
     @objc func updateTimer(){
         Global.seconds-=1
+        (Global.h, Global.m, Global.s) = secondsToHoursMinutesSeconds(seconds: Global.seconds)
+        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "update"), object: nil)
         print(Global.seconds)
     }
+    
+    func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
+        return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
+    }
+
     
 }
 
