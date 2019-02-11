@@ -7,10 +7,10 @@
 //
 
 import UIKit
+import UserNotifications
 
-class ViewController: UIViewController {
+class ViewController: UIViewController{
     
-
     @IBOutlet weak var tree: UIImageView!
     @IBOutlet weak var play: UIButton!
     @IBOutlet weak var time: UIButton!
@@ -26,6 +26,8 @@ class ViewController: UIViewController {
     var menuPressed = 0
     var hour = 0
     var numOfUnlocks = 0
+    
+    var appDelegate = UIApplication.shared.delegate as? AppDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -132,14 +134,17 @@ class ViewController: UIViewController {
         Global.seconds-=1
         (Global.h, Global.m, Global.s) = secondsToHoursMinutesSeconds(seconds: Global.seconds)
         NotificationCenter.default.post(name: NSNotification.Name(rawValue: "update"), object: nil)
-        print(Global.seconds)
+        
+        if Global.seconds == 0 {
+            self.appDelegate?.scheduleNotification()
+            Global.timer.invalidate()
+        }
     }
+    
     
     func secondsToHoursMinutesSeconds (seconds : Int) -> (Int, Int, Int) {
         return (seconds / 3600, (seconds % 3600) / 60, (seconds % 3600) % 60)
     }
-
-    
 }
 
 
