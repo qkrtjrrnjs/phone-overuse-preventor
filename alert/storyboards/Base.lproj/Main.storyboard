@@ -83,13 +83,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" id="mSH-tA-r9j">
-                        <barButtonItem key="rightBarButtonItem" enabled="NO" systemItem="organize" id="Ktc-ac-ecG">
-                            <connections>
-                                <segue destination="wgs-lL-4Zi" kind="show" id="tkM-gT-pz0"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="mSH-tA-r9j"/>
                     <connections>
                         <outlet property="menu" destination="6CN-BZ-VMa" id="r6k-2x-gsO"/>
                         <outlet property="pause" destination="DAR-Le-MGZ" id="BOu-de-KGd"/>

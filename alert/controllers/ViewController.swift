@@ -114,7 +114,7 @@ class ViewController: UIViewController{
     }
     
     @IBAction func playButton(_ sender: UIButton) {
-        if Global.seconds == 0 {
+        if Global.seconds <= 0 {
             let alert = UIAlertController(title: "ERROR", message: "", preferredStyle: UIAlertController.Style.alert)
             alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: nil))
             self.present(alert, animated: true, completion: nil)
@@ -132,15 +132,58 @@ class ViewController: UIViewController{
     }
     
     @objc func updateTimer(){
-        Global.seconds-=10
+        Global.seconds-=1
         (Global.h, Global.m, Global.s) = secondsToHoursMinutesSeconds(seconds: Global.seconds)
         //NotificationCenter.default.post(name: NSNotification.Name(rawValue: "update"), object: nil)
-        timeLabel.text = String(Global.seconds)
-        
+        if Global.seconds >= 0{
+            print()
+        }
         if Global.seconds == 0 {
             self.appDelegate?.scheduleNotification()
+            pause.isEnabled = false
+            pause.isHidden = true
+            play.isEnabled = true
+            play.isHidden = false
+        }
+        if Global.seconds == -1{
             UIScreen.main.brightness = 0.01
+        }
+        if Global.seconds == -2{
+            UIScreen.main.brightness = 1
+
+        }
+        if Global.seconds == -3{
+            UIScreen.main.brightness = 0.01
+
+        }
+        if Global.seconds == -4{
+            UIScreen.main.brightness = 1
             Global.timer.invalidate()
+        }
+    
+    }
+    
+    func print(){
+        if Global.h == 0 && Global.m == 0 {
+            timeLabel.text = "\(Global.s) secs"
+        }
+        else if Global.h == 0 && Global.s == 0 {
+            timeLabel.text = "\(Global.m) mins"
+        }
+        else if Global.m == 0 && Global.s == 0 {
+            timeLabel.text = "\(Global.h) hrs"
+        }
+        else if Global.h == 0 {
+            timeLabel.text = "\(Global.m) mins \(Global.s) secs"
+        }
+        else if Global.m == 0{
+            timeLabel.text = "\(Global.h) hrs \(Global.s) secs"
+        }
+        else if Global.s == 0{
+            timeLabel.text = "\(Global.h) hrs \(Global.m) mins"
+        }
+        else{
+            timeLabel.text = "\(Global.h) hrs \(Global.m) mins \(Global.s) secs"
         }
     }
     
