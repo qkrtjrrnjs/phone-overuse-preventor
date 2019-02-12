@@ -17,6 +17,7 @@ class ViewController: UIViewController{
     @IBOutlet weak var unlock: UIButton!
     @IBOutlet weak var menu: UIButton!
     @IBOutlet weak var pause: UIButton!
+    @IBOutlet weak var timeLabel: UILabel!
     
     var playButtonCenter: CGPoint!
     var timeButtonCenter: CGPoint!
@@ -131,12 +132,14 @@ class ViewController: UIViewController{
     }
     
     @objc func updateTimer(){
-        Global.seconds-=1
+        Global.seconds-=10
         (Global.h, Global.m, Global.s) = secondsToHoursMinutesSeconds(seconds: Global.seconds)
-        NotificationCenter.default.post(name: NSNotification.Name(rawValue: "update"), object: nil)
+        //NotificationCenter.default.post(name: NSNotification.Name(rawValue: "update"), object: nil)
+        timeLabel.text = String(Global.seconds)
         
         if Global.seconds == 0 {
             self.appDelegate?.scheduleNotification()
+            UIScreen.main.brightness = 0.01
             Global.timer.invalidate()
         }
     }
